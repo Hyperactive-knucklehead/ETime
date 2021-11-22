@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ETime</title>
+    <!-- custom css -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <!-- font awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="https://www.pngkit.com/png/full/400-4007911_nyt-logo-new-york-times-app-icon.png"
+      type="image/x-icon"
+    />
+  </head>
+  
+  <body>
+    <!-- header start -->
+    <header class="wrapper">
+      <nav>
+        <input type="checkbox" id="show-search" />
+        <input type="checkbox" id="show-menu" />
+        <label for="show-menu" class="menu-icon"
+          ><i class="fas fa-bars"></i
+        ></label>
+        <div class="content">
+          <div class="logo">
+            <a href="#"
+              ><img
+                loading="lazy"
+                class="logo"
+                src="images/logo/logo-white.png"
+                alt="ETime"
+            /></a>
+          </div>
+          <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#technology">Technology</a></li>
+            <li>
+              <a href="#movies" class="desktop-link">Movies</a>
+              <input type="checkbox" id="show-movies" />
+              <label for="show-movies">Movies</label>
+              <ul>
+                <li><a href="#movies">Star Wars </a></li>
+                <li><a href="#movies">Howard The Duck	</a></li>
+                <li><a href="#movies">American Graffiti	</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#categories" class="desktop-link">Categories</a>
+              <input type="checkbox" id="show-categories" />
+              <label for="show-categories">Categories</label>
+              <ul>
+                <li><a href="#categories">Business</a></li>
+                <li><a href="#categories">Entertainment</a></li>
+                <li><a href="#categories">Features</a></li>
+                <li><a href="#categories">Trending</a></li>
+                <li>
+                  <a href="#categories" class="desktop-link">More News</a>
+                  <input type="checkbox" id="show-items" />
+                  <label for="show-items">More News</label>
+                  <ul>
+                    <li><a href="#categories">Weather</a></li>
+                    <li><a href="#categories">Hot topic</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#top-stories"> Stories</a></li>
+          </ul>
+        </div>
+        <label for="show-search" class="search-icon"
+          ><i class="fas fa-search"></i
+        ></label>
+        <form onsubmit="()=>e.preventDefault()" class="search-box">
+          <input
+            type="text"
+            placeholder="Type Something to Search..."
+            required
+          />
+          <button type="submit" class="go-icon">
+            <i class="fas fa-long-arrow-alt-right"></i>
+          </button>
+        </form>
+      </nav>
+    </header>
+    <!-- header end -->
+
+    <section id="allNews">
+      <!-- Carousel start -->
+      <div class="carousel">
+        <div class="progress-bar progress-bar--primary hide-on-desktop">
+          <div class="progress-bar__fill"></div>
+        </div>
+
+        <header class="main-post-wrapper">
+          <div class="slides">
+            <article class="main-post main-post--active">
+              <div class="main-post__image">
+                <img
+                  src="https://www.formula1.com/content/dam/fom-website/manual/Misc/2019-Races/Monaco2019/McLarenMonaco19.jpg.transform/9col/image.jpg"
+                  alt="New McLaren wind tunnel 'critical' to future performance, says Tech Director Key"
+                />
+              </div>
+              <div class="main-post__content">
+                <div class="main-post__tag-wrapper">
+                  <span class="main-post__tag">News</span>
+                </div>
+                <h1 class="main-post__title">
+                  <i>New McLaren wind tunnel 'critical' to future performance, says
+                    Tech Director Key</i>
+                </h1>
+                <a
+                  href="https://www.formula1.com/en/latest/article.new-mclaren-wind-tunnel-critical-to-future-performance-says-tech-director.6QiXtuLNFYbuqIwJi0a2GN.html"
+                  target="_blank"
+                  class="main-post__link"
+                >
+                  <span class="main-post__link-text"><i>know more</i></span>
+                  <svg
+                    class="main-post__link-icon main-post__link-icon--arrow"
+                    width="37"
+                    height="12"
+                    viewBox="0 0 37 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 6H36.0001M36.0001 6L31.0001 1M36.0001 6L31.0001 11"
+                      stroke="white"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </article>
+            <article class="main-post main-post--not-active">
+              <div class="main-post__image">
+                <img
+                  src="https://www.formula1.com/content/dam/fom-website/sutton/2019/Hungary/Saturday/1017645792-LAT-20190803-_2ST5188.jpg.transform/9col-retina/image.jpg"
+                  alt="What To Watch For in the 2019 Hungarian Grand Prix"
+                />
+              </div>
+              <div class="main-post__content">
+                <div class="main-post__tag-wrapper">
+                  <span class="main-post__tag">Video</span>
+                </div>
+                <h1 class="main-post__title">
+                 <i> What To Watch For in the 2019 Hungarian Grand Prix</i>
+                </h1>
+                <a
+                  class="main-post__link"
+                  target="_blank"
+                  href="https://youtu.be/jnz-lc9LYgo"
+                >
+                  <svg
+                    class="main-post__link-icon main-post__link-icon--play-btn"
+                    width="30"
+                    height="30"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="10"
+                      cy="10"
+                      r="9"
+                      stroke="#C20000"
+                      stroke-width="2"
+                    />
+                    <path d="M14 10L8 6V14L14 10Z" fill="white" />
+                  </svg>
+                  <span class="main-post__link-text"><i>play video</i></span>
+                </a>
+              </div>
+            </article>
+            <article class="main-post main-post--not-active">
+              <div class="main-post__image">
+                <img
+                  src="https://www.formula1.com/content/dam/fom-website/manual/Misc/2019-Races/Austria-2019/Top3Austria2019.jpg.transform/9col-retina/image.jpg"
+                  alt="Hamilton wants harder championship fight from Leclerc and
+                Verstappen"
+                />
+              </div>
+              <div class="main-post__content">
+                <div class="main-post__tag-wrapper">
+                  <span class="main-post__tag">News</span>
+                </div>
+                <h1 class="main-post__title">
+                  <i>Hamilton wants harder championship fight from Leclerc and
+                    Verstappen</i>
+                </h1>
+                <a
+                  href="https://www.formula1.com/en/latest/article.hamilton-wants-harder-championship-fight-from-leclerc-and-verstappen.4W1r348nkSd5kdqqj2wkN.html"
+                  target="_blank"
+                  class="main-post__link"
+                >
+                  <span class="main-post__link-text"><i>know more</i></span>
+                  <svg
+                    class="main-post__link-icon main-post__link-icon--arrow"
+                    width="37"
+                    height="12"
+                    viewBox="0 0 37 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 6H36.0001M36.0001 6L31.0001 1M36.0001 6L31.0001 11"
+                      stroke="white"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </article>
+          </div>
+        </header>
+
+        <div class="posts-wrapper hide-on-mobile">
+          <article class="post post--active">
+            <div class="progress-bar">
+              <div class="progress-bar__fill"></div>
+            </div>
+            <header class="post__header">
+              <span class="post__tag">News</span>
+              <p class="post__published">16 August 2019</p>
+            </header>
+            <h2 class="post__title">
+              New McLaren wind tunnel 'critical' to future performance, says
+              Tech Director Key
+            </h2>
+          </article>
+          <article class="post">
+            <div class="progress-bar">
+              <div class="progress-bar__fill"></div>
+            </div>
+            <header class="post__header">
+              <span class="post__tag">Video</span>
+              <p class="post__published">12 August 2019</p>
+            </header>
+            <h2 class="post__title">
+              What To Watch For in the 2019 Hungarian Grand Prix
+            </h2>
+          </article>
+          <article class="post">
+            <div class="progress-bar">
+              <div class="progress-bar__fill"></div>
+            </div>
+            <header class="post__header">
+              <span class="post__tag">News</span>
+              <p class="post__published">08 August 2019</p>
+            </header>
+            <h2 class="post__title">
+              Hamilton wants harder championship fight from Leclerc and
+              Verstappen
+            </h2>
+          </article>
+        </div>
+      </div>
+      <!-- Carousel end -->
+      <section id="technology" class="banner">
+          <div class="banner-main-content">
+            <h2>GET THE WORLD'S LATEST TECH NEWS</h2>
+            <h3>World's Leading Tech News Portal</h3>
+            
+            <button>
+              <a target="_blank" href="https://www.bbc.com/news/technology"
+              >Know More</a
+              >
+            </button>
+            
+    <section id="news-details">
+      <div class="current-news-head">
+        <h3 id="apple-glass-news">
+          Apple Glasses: What we expect, what we think we are
+          <span>by scott stein</span>
+        </h3>
+
+        <h3 id="elon-musk-phone">
+          What's it's like to have Elon Musk's old phone number
+          <span>by abrar al-heeti</span>
+        </h3>
+
+        <h3 id="chris-pratt-news" >
+          Watch the exact moment Chris Pratt accidentally deletes 51, 000
+          emails <span>by goel fashingbauer</span>
+        </h3>
+
+        <h3 id="launch-rocket-news" >
+          Richard Branson's Virgin Orbit will launch a rocket from midair
+          Sunday <span>by eric mack</span>
+        </h3>
+      </div>
+    </div>
+
+    <div class="banner-sub-content">
+      <div class="hot-topic">
+        <img loading="lazy" src="images/banner-news-1.jpg" alt="" />
+
+        <div class="hot-topic-content">
+          <h2 id="twitter-new-retweet" >
+            Twitter's New Retweet With Comment Counter Is Now Available On
+            Android & Web
+          </h2>
+
+          <p>
+            This isn’t a huge feature, but it can be pretty useful to some people. Now you’re going to be able to see how many people retweeted your tweet and added a comment. 
+          </p>
+          <a href="newsDetails.html" target="_blank"  id="twitter">Read More</a>
+        </div>
+      </div>
+
+      <div class="hot-topic">
+        <img loading="lazy" src="https://i.ibb.co/DV4vNNK/m1-13-inch-macbook-air-shankland.jpg" alt="" />
+
+        <div class="hot-topic-content">
+          <h2 id="macOS-title" >
+            MacOS Monterey out now: Is my computer compatible with Apple's new OS?
+          </h2>
+
+          <p>
+            MacOS Monterey arrives today. We have a list of laptops and desktops compatible with Apple's newest operating system.
+          </p>
+          <a href="newsDetails.html" target="_blank" id="macOS" >Read More</a>
+        </div>
+      </div>
+
+      <div class="hot-topic">
+        <img loading="lazy" src="images/banner-news-3.jpg" alt="" />
+
+        <div class="hot-topic-content">
+          <h2 id="virtual-reality-title" >
+            How To Get Started In Virtual Reality
+          </h2>
+
+          <p>
+            A course for every chosen minister, ministry, church, and person who desires to leverage today’s visual technologies to reach into the hearts and lives of people with the gospel of Christ.
+          </p>
+          <a href="newsDetails.html" target="_blank" id="virtual-reality" >Read More</a>
+        </div>
+      </div>
+
+      <div class="hot-topic">
+        <img loading="lazy" src="images/banner-news-4.jpg" alt="" />
+
+        <div class="hot-topic-content">
+          <h2 id="microprocessor-title" >
+            Cooling microprocessors with carbon nanotubes
+          </h2>
+
+          <p>
+            "Cool it!" That's a prime directive for microprocessor chips and a promising new solution to meeting this imperative is in the offing.
+          </p>
+          <a href="newsDetails.html" target="_blank" id="microprocessor" >Read More</a>
+        </div>
+      </div>
+    </div>
+      </section>
+
+    <hr />
+
+    <main>
+    <section id="top-stories" class="main-container-left">
+      <h2>Top Stories</h2>
+      <div class="container-top-left">
+        <article>
+          <img loading="lazy" src="images/top-left.jpg" alt="image"/>
+
+          <div>
+            <h3 id="best-car-title" >Best Used Cars Under $20, 000 for families</h3>
+
+            <p>
+              The Best Affordable Cars & SUVs — New & Used
+            </p>
+
+            <a href="newsDetails.html" target="_blank" id="best-car" >Read More <span>>></span></a>
+          </div>
+        </article>
+      </div>
+
+      <div id="categories" class="container-bottom-left">
+        <article>
+          <img loading="lazy" src="images/bottom-left-1.jpg" alt="image"/>
+          <div>
+            <h3 id="smart-speaker-title" >Best smart speakers for the year</h3>
+            <p>
+              The best smart speakers not only let you listen to your favorite albums and tracks, they also come with a voice assistant built-in. So whether you want to hear the latest news, weather report, or get your burning questions answered, a smart speaker can take care of it all for you. 
+            </p>
+
+            <a href="newsDetails.html" target="_blank" id="smart-speaker" >Read More <span>>></span></a>
+          </div>
+        </article>
+
+        <article>
+          <img loading="lazy" src="images/bottom-left-2.jpg" alt="image" />
+          <div>
+            <h3 id="ipad-pro-title" >
+              Can an iPad Pro Replace My Laptop or Desktop Computer?
+            </h3>
+            <p>
+              The iPad Pro is more powerful than many of the entry-level laptops lining the store shelves. It earns that "Pro" name with a processor that's on par with a mid-level PC and a screen resolution that exceeds many of those same laptops, and the graphics power of an Xbox 360. 
+            </p>
+
+            <a href="newsDetails.html" target="_blank" id="ipad-pro"  >Read More <span>>></span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="main-container-right">
+      <h2>Latest Stories</h2>
+
+      <article>
+        <h4>just in</h4>
+        <div>
+          <h2 id="payment-portal-title" >
+            Here's how to track your stimulus check with the IRS Get My
+            Payment Portal
+          </h2>
+
+          <p>
+            While major banks in the U.S. started delivering $1,400 stimulus checks in March, the federal relief payments continue to arrive at millions of households struggling to make ends meet amid the coronavirus-hobbled economy.
+          </p>
+
+          <a href="newsDetails.html" target="_blank" id="payment-portal" >Read More <span>>></span></a>
+        </div>
+        <img loading="lazy" src="images/right-1.jpg" alt="image"  />
+      </article>
+
+      <article>
+        <h4>just in</h4>
+        <div>
+          <h2 id="outdoor-games-title" >The best outdoor games to play with your family</h2>
+
+          <p>  
+        Now that spring weather and warmer temperatures have arrived, it's time to venture outside. And with social-distancing requirements no longer in effect for small outdoor gatherings, you can finally return to parties, barbecues and all the other fun stuff we missed last year.
+          </p>
+
+          <a href="newsDetails.html" target="_blank" id="outdoor-games" >Read More <span>>></span></a>
+        </div>
+        <img loading="lazy" src="images/right-2.jpg" alt="image" />
+      </article>
+
+      <article>
+        <h4>just in</h4>
+        <div>
+          <h2 id="eBike-title" >
+            Why walk? Check out the best electric scooters and e-bikes for
+            2021
+          </h2>
+
+          <p>
+            If you’re looking for a convenient way to zip across town while cutting down on your carbon emissions, an e-bike or electric scooter might be just the ticket
+          </p>
+
+          <a href="newsDetails.html" target="_blank" id="eBike" >Read More <span>>></span></a>
+        </div>
+        <img loading="lazy" src="images/right-3.jpg" alt="image"/>
+      </article>
+
+      <article>
+        <h4>just in</h4>
+        <div>
+          <h2 id="disneyland-title" >
+            Disneyland Paris will stream its Lion King stage show Friday
+            night
+          </h2>
+
+          <p>
+            Singers, dancers, acrobats and drummers perform in Lion King: Rhythms of the Pride Lands.
+          </p>
+
+          <a href="newsDetails.html" target="_blank" id="disneyland" >Read More <span>>></span></a>
+        </div>
+        <img loading="lazy" src="images/right-4.jpg" alt="image"/>
+      </article>
+      <table id="movies" class="table">
+        <tr>
+          <th>Movie Title</th>
+          <th>Genre</th>
+          <th>Year</th>
+          <th>Gross</th>
+        </tr>
+        <tr>
+          <td data-th="Movie Title">Star Wars</td>
+          <td data-th="Genre">Adventure, Sci-fi</td>
+          <td data-th="Year">1977</td>
+          <td data-th="Gross">$460,935,665</td>
+        </tr>
+        <tr>
+          <td data-th="Movie Title">Howard The Duck</td>
+          <td data-th="Genre">"Comedy"</td>
+          <td data-th="Year">1986</td>
+          <td data-th="Gross">$16,295,774</td>
+        </tr>
+        <tr>
+          <td data-th="Movie Title">American Graffiti</td>
+          <td data-th="Genre">Comedy, Drama</td>
+          <td data-th="Year">1973</td>
+          <td data-th="Gross">$115,000,000</td>
+        </tr>
+      </table>
+    </section>
+    </main>
+    </section>
+
+    <!-- footer start -->
+    <footer class="footer">
+    <div class="footer__addr">
+    <h1 class="footer__logo">Something</h1>
+
+    <h2>Contact</h2>
+
+    <address>
+      115/1 North Kalimabad,Moulvibazar<br />
+
+      <a class="footer__btn" href="mailto:rahmanmahi02@gmail.com"
+        >Email Us</a
+      >
+    </address>
+    </div>
+
+    <ul class="footer__nav">
+    <li class="nav__item">
+      <h2 class="nav__title">Media</h2>
+
+      <ul class="nav__ul">
+        <li>
+          <a href="#">Online</a>
+        </li>
+
+        <li>
+          <a href="#">Print</a>
+        </li>
+
+        <li>
+          <a href="#">Alternative Ads</a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="nav__item">
+      <h2 class="nav__title">Technology</h2>
+
+      <ul class="nav__ul">
+        <li>
+          <a href="#">Hardware Design</a>
+        </li>
+
+        <li>
+          <a href="#">Software Design</a>
+        </li>
+
+        <li>
+          <a href="#">Digital Signage</a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="nav__item">
+      <h2 class="nav__title">Technology</h2>
+
+      <ul class="nav__ul">
+        <li>
+          <a href="#">Automation</a>
+        </li>
+
+        <li>
+          <a href="#">Artificial Intelligence</a>
+        </li>
+
+        <li>
+          <a href="#">IoT</a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="nav__item">
+      <h2 class="nav__title">Legal</h2>
+
+      <ul class="nav__ul">
+        <li>
+          <a href="#">Privacy Policy</a>
+        </li>
+
+        <li>
+          <a href="#">Terms of Use</a>
+        </li>
+
+        <li>
+          <a href="#">Sitemap</a>
+        </li>
+      </ul>
+    </li>
+    </ul>
+
+    <div class="legal">
+    <p>&copy; 2021 news sites. All rights reserved.</p>
+
+    <div class="legal__links">
+      <span
+        >Made with <span class="heart">♥</span> remotely from
+        Bangladesh</span
+      >
+    </div>
+    </div>
+    </footer>                  
+    </section>
+    <!-- footer end -->
+  </body>
+  <!-- app.js -->
+  <script src="js/allNews.js"></script>
+  <script src="js/carousel.js"></script>
+</html>
