@@ -334,6 +334,8 @@ body {
   background: #c20000;
   transition: all 0.16s;
 }
+
+/* for mobile device */
 .progress-bar--primary {
   z-index: 2;
 }
