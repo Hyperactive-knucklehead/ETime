@@ -5,17 +5,19 @@ const posts = document.querySelectorAll(".post");
 
 let i = 0;
 let postIndex = 0;
-let currentPost = posts[postIndex];
 let currentMainPost = mainPosts[postIndex];
-
+let currentPost = posts[postIndex];
 const progress = () => {
   if (i === 100) {
     i = -5;
     // reset progress bar
+    // for desktop
     currentPost.querySelector(".progress-bar__fill").style.width = 0;
+    // for mobile
     document.querySelector(
       ".progress-bar--primary .progress-bar__fill"
     ).style.width = 0;
+
     currentPost.classList.remove("post--active");
 
     postIndex++;
@@ -32,10 +34,14 @@ const progress = () => {
     currentMainPost = mainPosts[postIndex];
   } else {
     i++;
+    // for desktop
+
     currentPost.querySelector(".progress-bar__fill").style.width = `${i}%`;
+    // for mobile
     document.querySelector(
       ".progress-bar--primary .progress-bar__fill"
     ).style.width = `${i}%`;
+
     currentPost.classList.add("post--active");
 
     currentMainPost.classList.add("main-post--active");
