@@ -2,6 +2,7 @@ const getElement = (element) => {
   return document.getElementById(element);
 };
 
+// Event delegation
 document.getElementById("news-details").addEventListener("click", () => {
   window.open("newsDetails.html", "_blank");
 });
