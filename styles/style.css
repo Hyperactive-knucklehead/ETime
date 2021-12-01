@@ -674,25 +674,25 @@ body {
 }
 /*-------------------------------------main-----------------------------------*/
 
-main a {
+.main a {
   padding: 15px 0;
   display: block;
   transition: all 0.5s;
 }
 
-main span {
+.main span {
   transition: padding-left 0.5s;
 }
 
-main a:hover span {
+.main a:hover span {
   padding-left: 5px;
 }
 
-main a:hover {
+.main a:hover {
   color: #7ac64d;
 }
 @media (min-width: 992px) {
-  main {
+  .main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
